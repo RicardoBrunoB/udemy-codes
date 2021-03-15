@@ -1,0 +1,25 @@
+package exercicioCap4;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double a, b, c, d;
+		
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();
+		d = sc.nextDouble();
+		double diferenca = (a * b - c * d);
+		
+		System.out.println("DIFERENCA: " + diferenca);
+		
+		sc.close();
+	}
+
+}

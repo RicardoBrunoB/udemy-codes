@@ -1,0 +1,39 @@
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		java.util.Scanner sc = new Scanner(System.in);
+		double valor = sc.nextDouble();
+			if (valor >= 0 && valor <= 25.00){
+				System.out.println("INTERVALO [0,25]");
+				}
+			else {
+				if (codigo == 2) {
+				b = a * 4.50;
+				System.out.println("TOTAL: " + b);
+				}
+			else {
+				if (codigo == 3) {
+				b = a * 5.00;
+				System.out.println("TOTAL: " + b);						
+				}	
+			else {
+				if (codigo == 4) {
+				b = a * 2.00;
+				System.out.println("TOTAL: " + b);											
+				}	
+			else {
+				if (codigo == 5) {
+				b = a * 1.50;
+				System.out.println("TOTAL: " + b);						
+				}	
+			}
+		sc.close();
+			}
+			}
+		}
+	}
+}		

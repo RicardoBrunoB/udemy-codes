@@ -1,0 +1,30 @@
+package exercicioCap4;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int cod1, cod2, qtd1, qtd2;
+		double preco1, preco2;
+		
+		cod1 = sc.nextInt();
+		sc.nextInt();
+		cod2 = sc.nextInt();
+		qtd1 = sc.nextInt();
+		qtd2 = sc.nextInt();
+		preco1 = sc.nextDouble();
+		preco2 = sc.nextDouble();
+		
+		double valor = qtd1 * preco1 + qtd2 * preco2;
+		
+		System.out.println("VALOR A PAGAR: " + valor);
+		
+		sc.close();
+	}
+
+}

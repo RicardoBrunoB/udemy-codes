@@ -1,0 +1,34 @@
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		java.util.Scanner sc = new Scanner(System.in);
+		double valor = sc.nextDouble();
+			if (valor >= 0 && valor <= 25.00){
+				System.out.println("INTERVALO [0,25]");
+				}
+			else {
+				if (valor > 25.00 && valor <= 50.00){
+					System.out.println("INTERVALO [25,50]");
+					}
+			else {
+				if (valor > 50.00 && valor <= 75.00){
+					System.out.println("INTERVALO [50,75]");
+					}	
+			else {
+				if (valor > 75.00 && valor <= 100.00){
+					System.out.println("INTERVALO [75,100]");
+					}
+			else {
+				System.out.println("FORA DO INTERVALO");						
+				}	
+			}
+		sc.close();
+			}
+			}
+		}
+	}
+}		

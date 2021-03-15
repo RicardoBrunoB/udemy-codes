@@ -1,0 +1,30 @@
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		java.util.Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c;
+			if (a = 1){
+				c = b * 4.00;
+				System.out.println("TOTAL: " + c);
+			}
+			else {
+				if (b > a) {
+				c = b - a;
+				System.out.println("O JOGO DUROU " + c + " HORAS");
+				}
+				else {
+					if (a == b) {
+						System.out.println("O JOGO DUROU 24 HORAS");
+					}
+				
+				}
+		sc.close();
+			}
+	}
+}

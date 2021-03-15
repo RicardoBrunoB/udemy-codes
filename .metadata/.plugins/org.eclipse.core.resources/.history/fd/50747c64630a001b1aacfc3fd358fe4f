@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+
+		java.util.Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+			if (x / 2 != 0){
+				System.out.println("Par");
+			}
+			else {
+				if (x / 2 == 0) {
+				System.out.println("Impar");
+				}
+				else {
+				System.out.println("Par");
+				}
+		sc.close();
+			}
+	}
+}

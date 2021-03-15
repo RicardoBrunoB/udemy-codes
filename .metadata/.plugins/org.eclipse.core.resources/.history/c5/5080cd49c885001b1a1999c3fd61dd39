@@ -1,0 +1,41 @@
+package application;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Scanner;
+
+import model.entities.Contract;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		SimpleDateFormat sdf = new SimpleDateFormat ("dd/MM/yyyy");
+		
+		//dados do contrato
+		System.out.println("Enter contract data");
+		System.out.println("Number: ");
+		Integer number = sc.nextInt();
+		System.out.println("Date (dd/MM/yyyy): ");
+		Date date = sdf.parse(sc.next());	
+		System.out.println("Total value: ");
+		Double totalValue = sc.nextDouble();
+		Contract contract = new Contract(number, date, totalValue);
+		
+		//parcelamento
+		System.out.println("Enter the number of installments: ");
+		Integer n = sc.nextInt();
+		
+		for (int i=1; i<=n; i++) {
+			//ELABORAR A LÓGICA DE CÁLCULO DAS PARCELAS
+		}
+		
+		//imprimir parcelas do contrato
+		sc.close();
+		
+	}
+
+}
